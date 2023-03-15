@@ -1,0 +1,159 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body { 
+	padding: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/*Main navigation*/
+.nav-container {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.menu-buttons {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+i {
+    color: #3B816F
+}
+
+a {
+    color: #539382;
+    text-decoration: none;
+}
+
+/*Portfolio flex container*/
+h1 {
+    width: 75%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    width: 75%;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    margin-top: 1.5rem;
+    margin-bottom: 5.5rem;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    color: #307865; /*#539382;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-list {
+    width: 75%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+article {
+    background-color: #F0F5F3; /*#C9F8EB;*/
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.project-links {
+    color: #539382;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.project-description {
+    width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 2rem 0.5rem;
+    background-color: #EAA743;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-size: 0.5rem;
+    color: #FFFFFF;
+}
+
+.media-links {
+    color: #539382;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/*Media queries*/
+@media only screen and (min-width: 1000px) {
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        width: 30%;
+    }
+}
