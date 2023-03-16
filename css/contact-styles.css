@@ -1,18 +1,19 @@
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body { 
-	padding: 0;
+    padding: 0;
     font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-/*Main navigation*/
 .nav-container {
     width: 100%;
     margin: 0;
     padding: 2rem;
     background-color: #FFFFFF;
+    color: #3B816F;
+    font-size: 1.2rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -34,12 +35,8 @@ nav {
     justify-content: space-evenly;
 }
 
-.menu-item {
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-
-i {
-    color: #3B816F
+.menu-item:hover {
+    color: #A16812;
 }
 
 a {
@@ -47,11 +44,9 @@ a {
     text-decoration: none;
 }
 
-/*Contact info flex container*/
 .contact-container {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
     color: #3B816F;
     display: flex;
     flex-direction: column;
@@ -72,7 +67,6 @@ h1 {
     margin: 0;font-size: 1.5rem;
 }
 
-/*Logo image*/
 img {
     width: 100%;
     height: auto;
@@ -83,11 +77,10 @@ img {
     margin: 1rem 0 3rem;
 }
 
-/*Footer*/
 footer {
     width: 100%;
     margin: 0;
-    padding: 0.5rem 2rem 0.5rem;
+    padding: 1.5rem 2rem 1.5rem;
     background-color: #EAA743;
     position: fixed;
     bottom: 0;
@@ -98,23 +91,22 @@ footer {
 }
 
 .footer {
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-    font-size: 0.5rem;
-    color: #FFFFFF;
+    font-size: 1rem;
+    color: #244C46;
 }
 
 .media-links {
-    color: #3B816F;
+    color: #244C46;
+    font-size: 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-/*Media queries*/
 @media only screen and (min-width: 1000px) {
     .contact-container {
         width: 80%;
-        margin: 2rem auto;
+        margin: 1.5rem auto;
         flex-direction: row;
         gap: 0;
     }
