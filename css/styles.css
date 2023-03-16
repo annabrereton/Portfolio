@@ -1,9 +1,10 @@
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body { 
-	padding: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
 img {
@@ -11,13 +12,13 @@ img {
     height: auto;
 }
 
-/*Main navigation*/
 .nav-container {
     width: 100%;
     margin: 0;
     padding: 2rem;
     background-color: #FFFFFF;
     color: #3B816F;
+    font-size: 1.2rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -39,12 +40,8 @@ nav {
     justify-content: space-evenly;
 }
 
-.menu-item {
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-
-i {
-    color: #3B816F
+.menu-item:hover {
+    color: #A16812;
 }
 
 a {
@@ -52,16 +49,23 @@ a {
     text-decoration: none;
 }
 
-/*Main image-logo*/
 .logo {
     width: 90%;
     margin: 7rem 0 5rem;
 }
 
-/*Name + CV*/
+.fade-in-image {
+    animation: fadeIn 11s;
+    transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .logo-name-cv {
     margin: 1.5rem 0 5rem;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
     font-size: 1.5rem;
     color: #3B816F;
     display: flex;
@@ -77,21 +81,23 @@ a {
 h1 {
     margin: 0;
     padding-bottom: 2rem;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
     font-size: 1.5rem;
     color: #3B816F;
     display: flex;
 }
 
-#cv {
+.cv {
     text-align: center;
 }
 
-/*Footer*/
+.cv-pdf:hover {
+    color: #A16812;
+}
+
 footer {
     width: 100%;
     margin: 0;
-    padding: 0.5rem 2rem 0.5rem;
+    padding: 1.5rem 2rem 1.5rem;
     background-color: #EAA743;
     position: fixed;
     bottom: 0;
@@ -102,19 +108,18 @@ footer {
 }
 
 .footer {
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-    font-size: 0.5rem;
-    color: #FFFFFF;
+    font-size: 1rem;
+    color: #244C46;
 }
 
 .media-links {
-    color: #3B816F;
+    color: #244C46;
+    font-size: 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-/*Media queries*/
 @media only screen and (min-width: 1000px) {
     .logo {
         width: 45%;
