@@ -51,20 +51,19 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
 h1 {
     width: 75%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
     font-size: 2rem;
     text-align: center;
 }
 
 .contact-info {
     width: 75%;
-    margin: 0;font-size: 1.5rem;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 img {
@@ -80,7 +79,7 @@ img {
 footer {
     width: 100%;
     margin: 0;
-    padding: 1.5rem 2rem 1.5rem;
+    padding: 0.5rem 2rem 0.5rem;
     background-color: #EAA743;
     position: fixed;
     bottom: 0;
@@ -108,6 +107,6 @@ footer {
         width: 80%;
         margin: 1.5rem auto;
         flex-direction: row;
-        gap: 0;
+        gap: 3rem;
     }
 }
