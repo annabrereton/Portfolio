@@ -101,7 +101,7 @@ p {
 }
 
 article {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -109,10 +109,19 @@ article {
     gap: 2rem;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+.project-image {
+    width: 100%;
+}
+
 .project-links {
     color: #539382;
-    font-size: 1.5rem;
-    padding-right: 2rem;
+    font-size: 1.2rem;
+    padding-right: 0.8rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
